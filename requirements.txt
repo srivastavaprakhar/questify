@@ -1,1 +1,14 @@
-sqlite3
+fastapi
+uvicorn
+bcrypt
+requests
+numpy
+faiss-cpu
+sentence-transformers
+llama-cpp-python
+gpt4all
+llama-index-core
+llama-index-vector-stores-faiss
+llama-index-embeddings-openai
+openai
+python-dotenv
