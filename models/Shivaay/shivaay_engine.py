@@ -1,29 +1,31 @@
-from openai import OpenAI
-import os   
+import os
+import requests
 
 class ShivaayEngine:
-    def __init__(self, api_key=None):
-        self.api_key = api_key or os.getenv("SHIVAAY_API_KEY")
-        if not self.api_key:
-            raise ValueError("❌ SHIVAAY_API_KEY not found. Please set it in your .env file.")
 
-        # Shivaay API base
-        self.client = OpenAI(
-            api_key=self.api_key,
-            base_url="https://api.futurixai.com/api/shivaay/v1"
-        )
+    def __init__(self):
+        self.api_key = os.getenv("SHIVAAY_API_KEY")
+        self.url = "https://ai.futurixai.com/v1/chat/completions"
 
-    def generate(self, prompt: str) -> str:
-        try:
-            completion = self.client.chat.completions.create(
-                model="shivaay",
-                messages=[
-                    {"role": "system", "content": "You are a helpful assistant."},
-                    {"role": "user", "content": prompt}
-                ],
-                temperature=0.7,
-                max_tokens=500
-            )
-            return completion.choices[0].message.content.strip()
-        except Exception as e:
-            return f"Error from Shivaay API: {e}"
+    def generate(self, prompt: str):
+
+        headers = {
+            "Authorization": f"Bearer {self.api_key}",
+            "Content-Type": "application/json"
+        }
+
+        payload = {
+            "model": "shivaay",
+            "messages": [
+                {"role": "user", "content": prompt}
+            ],
+            "temperature": 0.7,
+            "max_tokens": 500
+        }
+
+        r = requests.post(self.url, headers=headers, json=payload)
+
+        if r.status_code != 200:
+            return f"Error from Shivaay API: {r.status_code} - {r.text}"
+
+        return r.json()["choices"][0]["message"]["content"]
