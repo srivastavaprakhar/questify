@@ -5,3 +5,4 @@ venv/
 *.gguf
 __pycache__/
 .venv/
+.env
