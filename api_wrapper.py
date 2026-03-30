@@ -1,7 +1,8 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from main import suppress_output  # ✅ reuse the same context manager
-from main import answer_question, safe_llm_init
+from main import answer_question
+from gemini_engine import GeminiEngine
 from embed_and_index import build_index
 from auth.user_auth import signup, login, init_user_table
 from config import DB_PATH, INDEX_PATH
@@ -39,8 +40,8 @@ init_user_table()
 
 # ==== Load once ====
 with suppress_output():
-   model = safe_llm_init()
-   index = build_index(db_path=DB_PATH, persist_path=INDEX_PATH)
+    model = GeminiEngine()
+    index = build_index(db_path=DB_PATH, persist_path=INDEX_PATH)
 
 # ==== Request Models ====
 class AuthRequest(BaseModel):

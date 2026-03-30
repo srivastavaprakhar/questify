@@ -63,3 +63,23 @@ Building index from SQLite database...
 Loading embedding model: intfloat/e5-small-v2 on CPU
 Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 21954.51it/s]
 Index saved to faiss_index
+LLM is explicitly disabled. Using MockLLM.
+Building index from SQLite database...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6608.08it/s]
+Index saved to faiss_index
+LLM is explicitly disabled. Using MockLLM.
+Building index from SQLite database...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 9125.03it/s]
+Index saved to faiss_index
+LLM is explicitly disabled. Using MockLLM.
+LLM is explicitly disabled. Using MockLLM.
+Building index from SQLite database...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5088.84it/s]
+Index saved to faiss_index
+Building index from SQLite database...
+Loading embedding model: intfloat/e5-small-v2 on CPU
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 15076.80it/s]
+Index saved to faiss_index

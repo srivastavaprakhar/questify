@@ -179,3 +179,106 @@
 
 * Dr. Richa Arora, Professor & HoD, Department of Arts
 2026-03-16 10:29:34,799 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-03-23 11:25:04,391 - INFO - LLM is explicitly disabled.
+2026-03-23 11:25:08,314 - INFO - User '1' logged in.
+2026-03-23 11:25:08,341 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-03-23 11:25:08,341 - INFO - Building RAG index...
+2026-03-23 11:25:09,233 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-23 11:25:09,300 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-03-23 11:25:09,575 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-23 11:25:09,641 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-23 11:25:10,031 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-23 11:25:10,309 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-23 11:25:10,796 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-23 11:25:10,859 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-03-23 11:25:32,484 - INFO - User query: who is the hof of cse dept?
+2026-03-23 11:25:32,527 - INFO - [🔍] Most relevant table inferred: faculty
+2026-03-23 11:25:39,167 - INFO - Bot response: The Head of Department (HoD) for the Department of Computer Science & Engineering is:
+
+* Dr. Neha Chaudhary, Professor & HoD (Department of Computer Science & Engineering and Department of Economics)
+2026-03-23 11:25:39,170 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-03-23 11:25:39,170 - INFO - User query: 
+2026-03-23 11:25:39,178 - ERROR - Error during response generation
+Traceback (most recent call last):
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/main.py", line 188, in main
+    response = answer_question(index, user_query, model)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/main.py", line 59, in answer_question
+    response_obj = query_engine.query(question)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index_instrumentation/dispatcher.py", line 413, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index/core/base/base_query_engine.py", line 44, in query
+    query_result = self._query(str_or_query_bundle)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index_instrumentation/dispatcher.py", line 413, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index/core/query_engine/retriever_query_engine.py", line 196, in _query
+    nodes = self.retrieve(query_bundle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index/core/query_engine/retriever_query_engine.py", line 149, in retrieve
+    nodes = self._retriever.retrieve(query_bundle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index_instrumentation/dispatcher.py", line 413, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index/core/base/base_retriever.py", line 210, in retrieve
+    nodes = self._retrieve(query_bundle)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index_instrumentation/dispatcher.py", line 413, in wrapper
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index/core/indices/vector_store/retrievers/retriever.py", line 115, in _retrieve
+    return self._get_nodes_with_embeddings(query_bundle)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index/core/indices/vector_store/retrievers/retriever.py", line 231, in _get_nodes_with_embeddings
+    query_result = self._vector_store.query(query, **self._kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index/core/vector_stores/simple.py", line 303, in query
+    top_similarities, top_ids = get_top_k_embeddings(
+                                ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index/core/indices/query/embedding_utils.py", line 31, in get_top_k_embeddings
+    similarity = similarity_fn(query_embedding_np, emb)  # type: ignore[arg-type]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/prakharsrivastava/Desktop/Projects/questify/venv/lib/python3.12/site-packages/llama_index/core/base/embeddings/base.py", line 67, in similarity
+    product = np.dot(embedding1, embedding2)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for *: 'NoneType' and 'float'
+2026-03-23 11:27:39,657 - INFO - LLM is explicitly disabled.
+2026-03-23 11:27:42,526 - INFO - User '1' logged in.
+2026-03-23 11:27:42,542 - ERROR - Could not connect to API server for /login: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /login (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-03-23 11:27:42,543 - INFO - Building RAG index...
+2026-03-23 11:27:43,357 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-23 11:27:43,565 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-03-23 11:27:43,808 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-23 11:27:43,809 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-23 11:27:43,871 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-23 11:27:44,148 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-23 11:27:44,397 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-23 11:27:44,722 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-23 11:27:44,779 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-03-23 11:27:56,936 - INFO - User query: who is the deputy hod of cse dept?
+2026-03-23 11:27:56,979 - INFO - [🔍] Most relevant table inferred: faculty
+2026-03-23 11:28:01,592 - INFO - Bot response: Dr. Mahesh Jangid is the Associate Professor & Deputy HoD in the Department of Computer Science & Engineering. According to the records, he also holds the same position in the Department of Economics.
+2026-03-23 11:28:01,595 - ERROR - Could not connect to API server for /ask: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /ask (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [Errno 61] Connection refused"))
+2026-03-30 09:32:47,942 - INFO - LLM is explicitly disabled.
+2026-03-30 09:35:50,248 - INFO - LLM is explicitly disabled.
+2026-03-30 09:35:51,138 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-30 09:35:51,177 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-03-30 09:35:51,430 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-30 09:35:51,431 - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-03-30 09:35:51,461 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-30 09:35:51,723 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-30 09:35:52,048 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-30 09:35:52,358 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-30 09:35:52,390 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-03-30 09:35:56,993 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-30 09:35:57,022 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"
+2026-03-30 09:35:57,260 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-30 09:35:57,292 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-03-30 09:35:57,536 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-03-30 09:35:57,904 - INFO - HTTP Request: GET https://huggingface.co/api/models/intfloat/e5-small-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-03-30 09:35:58,195 - INFO - HTTP Request: HEAD https://huggingface.co/intfloat/e5-small-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-03-30 09:35:58,247 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/intfloat/e5-small-v2/ffb93f3bd4047442299a41ebb6fa998a38507c52/config.json "HTTP/1.1 200 OK"

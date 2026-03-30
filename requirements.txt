@@ -12,3 +12,4 @@ llama-index-vector-stores-faiss
 llama-index-embeddings-openai
 openai
 python-dotenv
+google-genai

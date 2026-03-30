@@ -2046,3 +2046,351 @@ Department id: 1
 Department id (from departments): 1
 Department name (from departments): Department of Economics
 ---
+
+--- Query: who is the hof of cse dept? ---
+[1] Score: 0.815
+Record from department table:
+Id: 1
+Name: Department of Computer Science & Engineering
+---
+[2] Score: 0.813
+Record from faculty table:
+Faculty id: 51
+Name: Dr. Neha Chaudhary
+Designation: Professor & HoD
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[3] Score: 0.812
+Record from faculty table:
+Faculty id: 52
+Name: Dr. Mahesh Jangid
+Designation: Associate Professor & Deputy HoD
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[4] Score: 0.805
+Record from departments table:
+Department id: 5
+Department name: Department of Computer Science & Engineering
+---
+[5] Score: 0.805
+Record from faculty table:
+Faculty id: 88
+Name: Dr. Manu Shrivastava
+Designation: Assistant Professor (Senior Scale)
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[6] Score: 0.802
+Record from faculty table:
+Faculty id: 139
+Name: Dr. Mahesh Jangid
+Designation: Associate Professor & Deputy HoD
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[7] Score: 0.801
+Record from faculty table:
+Faculty id: 126
+Name: Mr. Tarun Jain
+Designation: Assistant Professor (Senior Scale)
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[8] Score: 0.801
+Record from faculty table:
+Faculty id: 91
+Name: Dr. Mohit Kushwaha
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[9] Score: 0.801
+Record from faculty table:
+Faculty id: 54
+Name: Dr. Aditya Sinha
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[10] Score: 0.800
+Record from faculty table:
+Faculty id: 107
+Name: Mr. Sachin Gupta
+Designation: Assistant Professor (Senior Scale)
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[11] Score: 0.800
+Record from faculty table:
+Faculty id: 138
+Name: Dr. Neha Chaudhary
+Designation: Professor & HoD
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[12] Score: 0.799
+Record from faculty table:
+Faculty id: 58
+Name: Ms. Akanksha Mrinali
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[13] Score: 0.799
+Record from faculty table:
+Faculty id: 213
+Name: Mr. Tarun Jain
+Designation: Assistant Professor (Senior Scale)
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[14] Score: 0.799
+Record from faculty table:
+Faculty id: 175
+Name: Dr. Manu Shrivastava
+Designation: Assistant Professor (Senior Scale)
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[15] Score: 0.798
+Record from faculty table:
+Faculty id: 122
+Name: Dr. Sushama
+Designation: Assistant Professor (Senior Scale) & Assistant Director, Directorate of Student Welfare
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[16] Score: 0.798
+Record from faculty table:
+Faculty id: 132
+Name: Mr. Vijay Hasan Puri
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[17] Score: 0.798
+Record from faculty table:
+Faculty id: 49
+Name: Dr. Chhatar Singh Lamba
+Designation: Professor & Associate Dean
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[18] Score: 0.798
+Record from faculty table:
+Faculty id: 72
+Name: Ms. Babita Tiwari
+Designation: Assistant Professor (Senior Scale)
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[19] Score: 0.797
+Record from faculty table:
+Faculty id: 120
+Name: Dr. Sunita Singhal
+Designation: Associate Professor (Senior Scale)
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[20] Score: 0.797
+Record from faculty table:
+Faculty id: 59
+Name: Dr. Akshay Jadhav
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+
+--- Query: who is the deputy hod of cse dept? ---
+[1] Score: 0.831
+Record from faculty table:
+Faculty id: 52
+Name: Dr. Mahesh Jangid
+Designation: Associate Professor & Deputy HoD
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[2] Score: 0.825
+Record from faculty table:
+Faculty id: 139
+Name: Dr. Mahesh Jangid
+Designation: Associate Professor & Deputy HoD
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[3] Score: 0.802
+Record from faculty table:
+Faculty id: 51
+Name: Dr. Neha Chaudhary
+Designation: Professor & HoD
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[4] Score: 0.802
+Record from faculty table:
+Faculty id: 138
+Name: Dr. Neha Chaudhary
+Designation: Professor & HoD
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[5] Score: 0.801
+Record from department table:
+Id: 1
+Name: Department of Computer Science & Engineering
+---
+[6] Score: 0.799
+Record from faculty table:
+Faculty id: 132
+Name: Mr. Vijay Hasan Puri
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[7] Score: 0.798
+Record from faculty table:
+Faculty id: 76
+Name: Dr. Divya Thakur
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[8] Score: 0.798
+Record from faculty table:
+Faculty id: 126
+Name: Mr. Tarun Jain
+Designation: Assistant Professor (Senior Scale)
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[9] Score: 0.797
+Record from faculty table:
+Faculty id: 54
+Name: Dr. Aditya Sinha
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[10] Score: 0.797
+Record from faculty table:
+Faculty id: 129
+Name: Dr. Usha Jain
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[11] Score: 0.797
+Record from faculty table:
+Faculty id: 219
+Name: Mr. Vijay Hasan Puri
+Designation: Assistant Professor
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[12] Score: 0.797
+Record from faculty table:
+Faculty id: 231
+Name: Mr. Vikesh Sharma
+Designation: Assistant Professor
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[13] Score: 0.796
+Record from faculty table:
+Faculty id: 145
+Name: Ms. Akanksha Mrinali
+Designation: Assistant Professor
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[14] Score: 0.796
+Record from faculty table:
+Faculty id: 123
+Name: Dr. Susheela Vishnoi
+Designation: Assistant Professor (Selection Grade)
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[15] Score: 0.795
+Record from faculty table:
+Faculty id: 97
+Name: Dr. Onkar Singh
+Designation: Assistant Professor (Senior Scale)
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[16] Score: 0.795
+Record from faculty table:
+Faculty id: 224
+Name: Dr. Garima Singh
+Designation: Assistant Professor
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[17] Score: 0.795
+Record from departments table:
+Department id: 5
+Department name: Department of Computer Science & Engineering
+---
+[18] Score: 0.795
+Record from faculty table:
+Faculty id: 58
+Name: Ms. Akanksha Mrinali
+Designation: Assistant Professor
+Department id: 5
+Department id (from departments): 5
+Department name (from departments): Department of Computer Science & Engineering
+---
+[19] Score: 0.795
+Record from faculty table:
+Faculty id: 229
+Name: Dr. Shilpi Gupta
+Designation: Associate Professor (Senior Scale)
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
+[20] Score: 0.794
+Record from faculty table:
+Faculty id: 136
+Name: Dr. Chhatar Singh Lamba
+Designation: Professor & Associate Dean
+Department id: 1
+Department id (from departments): 1
+Department name (from departments): Department of Economics
+---
